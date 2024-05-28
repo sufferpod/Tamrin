@@ -71,7 +71,7 @@ public:
 int main()
 {
     Article *X, *Y, *Z;
-    Y = new Lecture("Khanbook", "sadra", "body", Date(3, 3, 3), Author("mobina", "miri"));
+    Y = new Lecture("Khanbook", "sadra", "body", Date(3, 3, 3), Author("mobina", "miri")"Khanbook", "body", {3, 3, 3}, {"mobina", "miri"});
     Z = new Paper("Khansar", "sadra", "body", Date(3, 3, 3), Author("mobina", "miri"));
     Y->print();
     Z->print();
