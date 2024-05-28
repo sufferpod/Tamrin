@@ -44,7 +44,6 @@ public:
              << '\t' << body << endl
              << "Date: ";
         date.print();
-        cout << "Author: ";
         author.print();
         cout << endl;
     }
@@ -63,7 +62,6 @@ public:
              << '\t' << body << endl
              << "Date: ";
         date.print();
-        cout << "Author: ";
         author.print();
         cout << endl;
     }
@@ -71,7 +69,7 @@ public:
 int main()
 {
     Article *X, *Y, *Z;
-    Y = new Lecture();
+    Y = new Lecture("Khanbook", "body", {3, 3, 3}, {"mobina", "miri"});
     Z = new Paper();
     Y->print();
     Z->print();
