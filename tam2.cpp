@@ -37,7 +37,7 @@ private:
     string jornal;
 
 public:
-    Lecture(string jo = "none") : Article(), jornal(jo) {}
+    Lecture(string jo = "none", string ti = "none", string bo = "none", Date da = {0, 0, 0}, Author au = {"none", "none"}) : Article(), jornal(jo) {}
     void print()
     {
         cout << "jornal title: " << jornal << '\n'
