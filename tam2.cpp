@@ -69,7 +69,7 @@ public:
 int main()
 {
     Article *X, *Y, *Z;
-    Y = new Lecture("Khanbook", "body", {3, 3, 3}, {"mobina", "miri"});
+    Y = new Lecture("Khanbook", "sadra", "body", {3, 3, 3}, {"mobina", "miri"});
     Z = new Paper();
     Y->print();
     Z->print();
