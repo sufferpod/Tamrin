@@ -36,13 +36,13 @@ public:
 class Lecture : public Article
 {
 private:
-    string jornal;
+    string journal;
 
 public:
-    Lecture(string jo, string ti, string bo, Date da, Author au) : Article(ti, bo, da, au), jornal(jo) {}
+    Lecture(string jo, string ti, string bo, Date da, Author au) : Article(ti, bo, da, au), journal(jo) {}
     void print()
     {
-        cout << "jornal: " << jornal << endl
+        cout << "journal: " << journal << endl
              << "Article: " << title << endl
              << '\t' << body << endl
              << "Date: ";
