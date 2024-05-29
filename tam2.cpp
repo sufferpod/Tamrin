@@ -42,7 +42,8 @@ public:
     Lecture(string jo, string ti, string bo, Date da, Author au) : Article(ti, bo, da, au), jornal(jo) {}
     void print()
     {
-        cout << "jornal title: " << jornal << '\n'
+        cout << "jornal: " << jornal << endl
+             << "Article: " << title << endl
              << '\t' << body << endl
              << "Date: ";
         date.print();
@@ -71,7 +72,7 @@ public:
 int main()
 {
     Article *X, *Y, *Z;
-    Y = new Lecture("Khanbook", "sadra", "body", Date(3, 3, 3), Author("mobina", "miri"));
+    Y = new Lecture("KhanTimes", "khanbook", "body", Date(3, 3, 3), Author("mobina", "miri"));
     Z = new Paper("Khansar", "sadra", "body", Date(3, 3, 3), Author("mobina", "miri"));
     Y->print();
     Z->print();
